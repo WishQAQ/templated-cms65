@@ -1,0 +1,84 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<!-- Force latest IE rendering engine or ChromeFrame if installed -->
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<meta http-equiv="content-language" content="zh-CN" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta name="copyright" content="2014" />
+<!--[if lt IE 9]>    
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>		
+<![endif]-->
+<!--[if gte IE 9]>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>		
+<![endif]-->
+<!--[if !IE]><!-->
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+<!--<![endif]-->
+
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+<script src="{dede:global.cfg_templets_skin/}/js/tools.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/template.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/style.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/jquery.lightbox.css" type="text/css" media="screen" charset="utf-8">
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.situa.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.scrollloading.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/init.js" type="text/javascript" charset="utf-8"></script>
+<!--[if IE 6]>
+		<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>		<script src="{dede:global.cfg_templets_skin/}/js/ie6png.js" type="text/javascript" charset="utf-8"></script>		<script type="text/javascript">
+			IE6PNG.fix('*');
+		</script>
+<![endif]--></head>
+<body>
+<div class="body-main">
+{dede:include filename="head.htm"/}
+<div class="inner-banner">
+  <div class="nav-title">
+    <div class="max-min" style="color:#999"> {dede:field name='typeid' function="GetTopTypename(@me)" /}<br>
+      <span>{dede:field name='typeid' function="GetTopTypenameen(@me)" /}</span> </div>
+  </div>
+   <img src="{dede:global.cfg_templets_skin/}/picture/service-banner.jpg" width="1920" height="380">  </div>
+<div class="inner-title max-min">
+  <div class="breadcrumbs">{dede:field name='position'/}</div>
+    <h2><span>{dede:field name='typename'/}</span> / {dede:field name='typenameen'/}</h2>
+</div>
+<div class="inner-main max-min">
+  {dede:include filename="left.htm"/}
+  <div class="right">  	
+  	<div class="news_info">
+		 <p style="text-align:center;"><strong>郑州某某电子有限公司</strong></p><p style="text-align:center;"><strong>售后服务规定</strong></p><p><strong>（一）产品售后服务标准：</strong></p><p><strong>1、 产品一年质保(个别配件除外）：</strong></p><p><strong>从您购买日起，本公司将为您所购买的某某声系列产品，在正常使用的情况下发生故障机器提供一年保修服务（不包含人为损坏）。</strong></p><p><strong>2、在您购买本公司某某声系列品牌产品之日起的一年内，当您使用的本产品出现保修范围内的硬件故障时，本公司提供“全国联保”售后服务（由本公司各省份区域代理商替代本公司执行标准保修服务承诺）。</strong></p><p><strong>3、咨询服务：</strong></p><p><strong>如果您在使用中有技术问题需要咨询时，欢迎您拨打本公司客户服务热线： 400-000-0000，由我们的售后客服为您提供专业解答，或登陆本公司官方网站http://www.ksheng.com/咨询在线的客服人员。</strong></p><p><strong>4、不能享受&quot;某某声系列产品保修服务标准&quot;的情况，本承诺不适用于下列情况：</strong></p><p><strong>1．无某某声系列标识的产品；</strong></p><p><strong>2．本产品整机或部件已经超出保修期；</strong></p><p><strong>3．未按说明书要求/错误/不当使用、保管、保养或操作产品造成的故障或人为损坏情况（例如砸伤、碰伤等）；</strong></p><p><strong>4．非产品所规定的工作环境等造成的故障或人为损坏情况（例如温度过高、过低，过于潮湿或干燥，海拔过高，非正常的物理压力，电磁干扰，供电不稳，静电干扰，输入不合适的电压等）；</strong></p><p><strong>5．由非本公司授权各省份区域代理商、人员安装、修理、更改、添加或拆卸而造成的故障或人为损坏情况；</strong></p><p><strong>6．因使用盗版或其他非合法授权软件、非标准或未公开发行的软件造成的故障或损坏；</strong></p><p><strong>7．因意外因素或人为原因（包括计算机病毒、操作失误、进液、划伤、搬运、磕碰、不正确插拔、异物掉入、鼠害、虫害等）导致的故障或损坏；</strong></p><p><strong>8．因自然灾害等不可抗力（如地震、火灾、雷击等）原因造成的故障或损坏；</strong></p><p><strong>6、注意事项：</strong></p><p><strong>1．本公司将在本标准服务承诺范围内为您提供规定的保修服务，如果您有超出本标准保修服务承诺的其他服务需求，请选择本公司认证服务机构的有偿服务。</strong></p><p><strong>2．购货票据、产品保修卡是您获得本公司标准保修服务承诺的重要凭证，请您妥善保管。在本公司或本公司授权区域代理商为您提供保修服务时，请您务必出示相关凭证；如果您不能出示与相对应的购货票据、本公司某某声系列品牌产品保修卡，本公司将不提供维修售后服务。</strong></p><p><strong>（二）特别说明及其它</strong></p><p><strong>1、 本保修服务标准的适用范围：</strong></p><p><strong>仅适用于在中华人民共和国境内（港、澳、台地区除外）销售的某某声系列品牌产品。</strong></p><p><strong>2、 客户服务方式：</strong></p><p><strong>在法律许可的范围内，本公司可以自行选择采取修理、更换或退货的方式为您提供本文件所承诺的保修服务。</strong></p><p><strong>3、您购买的产品在保修期内发生硬件故障，您可以将故障产品送到中华人民共和国境内（不包括港、澳、台地区）任何就近的本公司授权的区域代理商进行维修服务。本公司授权的区域代理商会在维修完成后通知您将产品取回。本公司不承担取送产品的费用及风险。本公司授权的区域代理商联系方式及地址可以登录本公司官方网站http://www.ksheng.com/网页查询或通过本公司客户服务热线：400-000-0000获得。</strong></p><p><strong>4、 本公司否认的承诺</strong></p><p><strong>1.除非本服务承诺中明确表示，本公司不做任何其它明示或暗示的承诺和保证，包括对产品的可销性和对某一特定用途的适用性的暗示保证。除本公司另外作出明确承诺，否则：本保修服务承诺仅适用于本公司某某声系列品牌产品出厂时的配置。任何机构或人员（如销售商）给您安装的一切非本公司某某声系列品牌产品部件，本公司不承担保修责任。</strong></p><p><strong>2.任何机构和人员（如销售商）在本服务承诺之外就您购买的产品及其附属软硬件设备向您做出的任何额外承诺，本公司将不承担责任；您应向作出该承诺的机构或人员索要书面证明，以保证这些额外承诺能够兑现。</strong></p><p><strong>5、 保修凭证</strong></p><p><strong>购买票据、产品保修卡是您要求本公司履行法定相对应的售后义务以及本公司标准服务的依据，请务必妥善保管。</strong></p><p><strong>6、 替换产品或部件的所有权</strong></p><p><strong>本公司为您更换整机或故障部件后，原机器或故障部件将由本公司收回并享有所有权。</strong></p><p><strong>备注：以上“某某声系列”保留最终解释权。</strong></p><p><strong><br /></strong></p><p><strong>某某声系列售后服务维修地址：郑州省惠州市博罗县龙溪镇龙桥大道某某工业园 </strong></p><p><strong>联系电话：400-000-0000</strong></p>    </div>
+    
+  </div>
+  <div style=" clear:both"></div>
+</div>
+<!-- footer -->
+<!-- footer -->
+{dede:include filename="footer.htm"/}
+<script>
+$(function(){
+	$(".menu li:has(div)").eq(0).addClass("hover");
+	$(".scrollLoading").scrollLoading();
+	
+})
+</script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.menu.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.banner.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23908821-8', 'ksheng.com');
+  ga('send', 'pageview');
+</script>
+</div>
+<!-- end #body-main -->
+</body>
+</html>

@@ -1,0 +1,267 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<!--
+                       (0 0)
+   +-------------oOO----(_)----------------+
+   |           Powered By 织梦猫           |
+   |            www.dedemao.com            |
+   |        E-mail:admin@dedemao.com       |
+   +--------------------------oOO----------+
+                      |__|__|
+                       || ||
+                      ooO Ooo
+-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="baidu-site-verification" content="kUCUjQqS9v" />
+<!-- Force latest IE rendering engine or ChromeFrame if installed -->
+<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<![endif]-->
+<meta http-equiv="content-language" content="zh-CN" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="copyright" content="2014" />
+<link rel="shortcut icon" href="{dede:global.cfg_templets_skin/}/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="{dede:global.cfg_templets_skin/}/images/favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+<meta name="robots" content="deny" />
+<!--[if lt IE 9]>    
+		<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>		
+	<![endif]-->
+<!--[if gte IE 9]>
+		<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8">	</script>		
+	<![endif]-->
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/style.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/jquery.lightbox.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/jquery.fancybox.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/jquery.fancybox-buttons.css" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/jquery.fancybox-thumbs.css" />
+<link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css">
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script><!--<![endif]-->
+<script src="{dede:global.cfg_templets_skin/}/js/tools.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/template.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.situa.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.scrollloading.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/init.js" type="text/javascript" charset="utf-8"></script>
+<!--[if IE 6]>
+		<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="{dede:global.cfg_templets_skin/}/js/ie6png.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			IE6PNG.fix('*');
+		</script>
+	<![endif]-->
+<!-- Add mousewheel plugin (this is optional) -->
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.fancybox.js"></script>
+<!-- Add Button helper (this is optional) -->
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.fancybox-buttons.js"></script>
+<!-- Add Thumbnail helper (this is optional) -->
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.fancybox-thumbs.js"></script>
+<!-- Add Media helper (this is optional) -->
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.fancybox-media.js"></script>
+</head>
+<body>
+<div class="body-main" style="background:#fff">
+  <div class="header">
+    <div class="max-min">
+      <div class="logo fl"><a href="/" title=""><img src="{dede:global.cfg_templets_skin/}/img/logo.png" style="margin-top:10px;"></a></div>
+      <div class="menu fl">
+        <ul>
+          <li class="hover">
+            <div class="navf"><a href="/" title="首页"> <span class="navcurbg"></span> <span class="navcur">首页</span> <span class="navon">HOME</span> </a> </div>
+          </li>
+          {dede:channelartlist typeid='top' row='9' currentstyle='hover'}
+          <li class="{dede:field.currentstyle/}">
+            <div class="navf"><a href="{dede:field name='typeurl'/}" title=""> <span class="navcurbg"></span> <span class="navcur">{dede:field name='typename'/}</span> <span class="navon">{dede:field name='typenameen'/}</span> </a></div>
+            <div class="nav-son">
+              <ul>
+                {dede:channel type='son' noself='yes' }
+                <li><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></li>
+                {/dede:channel}
+              </ul>
+            </div>
+          </li>
+          {/dede:channelartlist}
+        </ul>
+      </div>
+      <div class="hotline fr"><img src="{dede:global.cfg_templets_skin/}/img/menu_line.png"></div>
+    </div>
+  </div>
+  <div class="side">
+    <ul>
+      <li> <a href="/qijingyilan" title="奇景一览">
+        <div class="sidebox"> <img src="{dede:global.cfg_templets_skin/}/img/side_icon01.png">奇景一览 </div>
+        </a> </li>
+      <li> <a href="/guanyuwomen/lianxiwomen" title="联系我们">
+        <div class="sidebox"> <img src="{dede:global.cfg_templets_skin/}/img/side_icon02.png">联系我们 </div>
+        </a> </li>
+      <li><a class="go_top1" href="http://wpa.qq.com/msgrd?v=3&uin=88888888&site=qq&menu=yes">
+        <div class="sidebox"> <img src="{dede:global.cfg_templets_skin/}/img/side_icon04.png">QQ客服 </div>
+        </a> </li>
+      <li> <a href="http://weibo.com/" rel="nofollow" target="_blank">
+        <div class="sidebox"> <img src="{dede:global.cfg_templets_skin/}/img/side_icon03.png">新浪微博 </div>
+        </a> </li>
+      <li style="border:none;"> <a href="javascript:goTop();" class="sidetop"><img src="{dede:global.cfg_templets_skin/}/img/side_icon05.png"></a> </li>
+    </ul>
+  </div>
+  <div class="index-banner" id="banner">
+    <ul>
+      <li data-img="{dede:global.cfg_templets_skin/}/picture/1.jpg" data-url="#"></li>
+      <li data-img="{dede:global.cfg_templets_skin/}/picture/2.jpg" data-url="#"></li>
+      <li data-img="{dede:global.cfg_templets_skin/}/picture/3.jpg" data-url="#"></li>
+      <li data-img="{dede:global.cfg_templets_skin/}/picture/4.jpg" data-url="#"></li>
+      <li data-img="{dede:global.cfg_templets_skin/}/picture/5.jpg" data-url="#"></li>
+    </ul>
+    <div class="number" id="number"></div>
+  </div>
+  <div class="index-main">
+    <div class="main-title">
+      <h2 class="max-min"><span>景点展示</span> / SCENERY DISPLAY</h2>
+    </div>
+    <div class="max-min index-pro clearfix">
+      <div class="index-probox index-proname">
+        <h3>SCENERY</h3>
+        <p>腾龙洞 国家地质公园<br>
+          大自然鬼斧神工<br />
+          造就人类文明的追源之地！</p>
+      </div>
+      <div class="index-probox" id="proser01">
+        <ul>
+          <li style="background-image:url({dede:global.cfg_templets_skin/}/images/p1.jpg)"></li>
+          <li style="background-image:url({dede:global.cfg_templets_skin/}/images/p1-1.jpg)"></li>
+        </ul>
+        <div class="number" id="pronum01"></div>
+        <div class="proboxbg"></div>
+        <div class="protext"> <a href="/chanpinzhongxin/gewubiaoyan">
+          <h3>歌舞表演</h3>
+          <p>SING AND DANCING</p>
+          </a> </div>
+      </div>
+      <div class="index-probox" id="proser02">
+        <ul>
+          <li style="background-image:url({dede:global.cfg_templets_skin/}/images/p2.jpg)"></li>
+          <li style="background-image:url({dede:global.cfg_templets_skin/}/images/p2-2.jpg)"></li>
+        </ul>
+        <div class="number" id="pronum02"></div>
+        <div class="proboxbg"></div>
+        <div class="protext"> <a href="/qijingyilan/dongneiyulan">
+          <h3>洞内预览</h3>
+          <p>PREVIEW</p>
+          </a> </div>
+      </div>
+      <div class="index-probox" id="proser03">
+        <ul>
+          <li style="background-image:url({dede:global.cfg_templets_skin/}/images/13.jpg)"></li>
+          <li style="background-image:url({dede:global.cfg_templets_skin/}/images/13-2.jpg)"></li>
+        </ul>
+        <div class="number" id="pronum03"></div>
+        <div class="proboxbg"></div>
+        <div class="protext"> <a href="/qijingyilan/wolongtunjiang">
+          <h3>卧龙吞江</h3>
+          <p>LYING DRAGON</p>
+          </a> </div>
+      </div>
+    </div>
+    <div class="max-min "><a href="/qijingyilan" class="index-promore">查看更多/ LEARN MORE</a></div>
+  </div>
+  <div class="index-main" style=" height:656px;background:#343434;">
+    <div class="main-title main-title2">
+      <h2 class="max-min" style="position:relative"><a href="/longdongneiwai/zhoubianfengjing" class="index-newsmore" style="position:absolute; right:0; top:0px;">MORE</a><span>景区资讯</span> / NEWS CENTER</h2>
+    </div>
+    <div class="max-min index-news clearfix">
+      <div class="index-newsle">
+        <div class="index-newsle-img" style="height:330px" > 
+          <!-- <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/cyberplayer.min.js"></script> 
+          <script type="text/javascript">
+			$(document).ready(function(){var player=cyberplayer("mobileUPlayer").setup({width:600,height:330,backcolor:"#FFFFFF",stretching:"uniform",file:"http://img.ingping.com/video/6500/6500_960x540.mp4",image:"{dede:global.cfg_templets_skin/}/images/20150422162517472.jpg",autoStart:false,volume:100,controlbar:"over",ak:"MzzqHWRv4Mo78HIMj5eT8fuq",sk:"PQ96Ev3GXDbPSiXh"});});
+		</script>
+		-->
+          <embed src="http://player.56.com/v_MzQ0OTY1Nw.swf" type="application/x-shockwave-flash" width="600" height="330" allowfullscreen="true" allownetworking="all" allowscriptaccess="always"></embed>
+          <div id="mobileUPlayer"> </div>
+        </div>
+        <h3><!--<span></span>-->腾龙洞风景名胜区· 中国最美的地方</h3>
+        <!--<a href="#"></a>-->中国最美六大旅游洞穴，洞中有山，山中有洞，水洞旱洞相连，主洞支洞互通，无毒气，无蛇蝎，无污染，洞内终年恒温14一18℃，空气流畅。 </div>
+      <div class="index-newsri"> {dede:arclist row='3' titlelen='60' typeid='42,43,45'}
+        <dl class="clearfix" onClick="window.location='[field:arcurl/]'">
+          <dt>0[field:global.autoindex/]</dt>
+          <dd>
+            <h3><span>[field:pubdate function="MyDate('y-m-d',@me)"/]</span>[field:title/]</h3>
+            <p>[field:description function='cn_substr(@me,158)'/].....</p>
+          </dd>
+        </dl>
+        {/dede:arclist} </div>
+    </div>
+  </div>
+  <div class="index-main" style="height:620px;">
+    <div class="main-title ">
+      <h2 class="max-min"><span>龙洞风光</span> /CAVE SCENERY</h2>
+    </div>
+    <div class="index-brand max-min clearfix">
+      <div class="index-brandbox" onClick="window.location='/qijingyilan'" id="brandbox1">
+        <div class="brand-icon icon01"></div>
+        <div class="brand-title">
+          <h4>奇景一览</h4>
+          <p>PREVIEW</p>
+          <span></span></div>
+        <div class="brand-intro">中国最美的地方<br>
+          带您观赏大自然饕餮风光！</div>
+        <div class="nrand-jia"></div>
+      </div>
+      <div class="index-brandbox" onClick="window.location='/youkefuwu'" id="brandbox2">
+        <div class="brand-icon icon02"></div>
+        <div class="brand-title">
+          <h4>游客服务</h4>
+          <p>SERVICE</p>
+          <span></span></div>
+        <div class="brand-intro">我们是您最忠实的旅游管家，只需您一个电话</div>
+        <div class="nrand-jia"></div>
+      </div>
+      <div class="index-brandbox" onClick="window.location='/lvxingzhinan'" id="brandbox3">
+        <div class="brand-icon icon03"></div>
+        <div class="brand-title">
+          <h4>旅行指南</h4>
+          <p>ITINERARY</p>
+          <span></span></div>
+        <div class="brand-intro">我们为您指路<br>
+        </div>
+        <div class="nrand-jia"></div>
+      </div>
+      <div class="index-brandbox" onClick="window.location='/guanyuwomen'" id="brandbox4">
+        <div class="brand-icon icon04"></div>
+        <div class="brand-title">
+          <h4>优秀团队</h4>
+          <p>GOOD TEAM</p>
+          <span></span></div>
+        <div class="brand-intro">恩施硒游记国际旅行社有限公司，<br>
+          是一家以品牌经营的独资公司</div>
+        <div class="nrand-jia"></div>
+      </div>
+    </div>
+  </div>
+  <!-- footer --> 
+  {dede:include filename="footer.htm"/} 
+  <script>
+$(function(){
+	$(".menu li:has(div)").eq(0).addClass("hover");
+	$(".scrollLoading").scrollLoading();
+	
+})
+</script> 
+  <script src="{dede:global.cfg_templets_skin/}/js/jquery.menu.js" type="text/javascript" charset="utf-8"></script> 
+  <script src="{dede:global.cfg_templets_skin/}/js/jquery.banner.js" type="text/javascript" charset="utf-8"></script> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23908821-8', 'ksheng.com');
+  ga('send', 'pageview');
+</script> 
+</div>
+<!-- end #body-main -->
+</body>
+</html>

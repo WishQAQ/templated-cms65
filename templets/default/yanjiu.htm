@@ -1,0 +1,83 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<!-- Force latest IE rendering engine or ChromeFrame if installed -->
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<meta http-equiv="content-language" content="zh-CN" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta name="copyright" content="2014" />
+<!--[if lt IE 9]>    
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>		
+<![endif]-->
+<!--[if gte IE 9]>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>		
+<![endif]-->
+<!--[if !IE]><!-->
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+<!--<![endif]-->
+
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+<script src="{dede:global.cfg_templets_skin/}/js/tools.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/template.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/style.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/jquery.lightbox.css" type="text/css" media="screen" charset="utf-8">
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.situa.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.scrollloading.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/init.js" type="text/javascript" charset="utf-8"></script>
+<!--[if IE 6]>
+		<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>		<script src="{dede:global.cfg_templets_skin/}/js/ie6png.js" type="text/javascript" charset="utf-8"></script>		<script type="text/javascript">
+			IE6PNG.fix('*');
+		</script>
+<![endif]--></head>
+<body>
+<div class="body-main">
+{dede:include filename="head.htm"/}
+<div class="inner-banner">
+  <div class="nav-title">
+    <div class="max-min" style="color:#999"> {dede:field name='typeid' function="GetTopTypename(@me)" /}<br>
+      <span>{dede:field name='typeid' function="GetTopTypenameen(@me)" /}</span> </div>
+  </div>
+  <img src="{dede:global.cfg_templets_skin/}/picture/about-banner.jpg" width="1920" height="380"></div>
+<div class="inner-title max-min">
+  <div class="breadcrumbs">{dede:field name='position'/}</div>
+    <h2><span>{dede:field name='typename'/}</span> / {dede:field name='typenameen'/}</h2>
+</div>
+<div class="inner-main max-min">
+  {dede:include filename="left.htm"/}
+  <div class="right">
+    <div class="news_info">
+		<p style="text-align:left;line-height:15px;font-family:宋体, arial;font-size:12px;"><span id="_baidu_bookmark_start_2" style="display:none;line-height:0px;">﻿</span><span id="_baidu_bookmark_start_4" style="display:none;line-height:0px;">﻿</span></p><p style="text-align:center"><img border="0" hspace="0" vspace="0" src="{dede:global.cfg_templets_skin/}/picture/69781362192395.jpg" width="700" /></p><p style="text-align:left;"><strong>　　</strong></p><p style="text-align:left;"><br /></p><p><span id="_baidu_bookmark_start_12" style="display:none;line-height:0px;">﻿</span><span id="_baidu_bookmark_start_14" style="display:none;line-height:0px;">﻿</span><span id="_baidu_bookmark_start_8" style="display:none;line-height:0px;">﻿</span><span id="_baidu_bookmark_start_10" style="display:none;line-height:0px;">﻿</span><strong> &nbsp; &nbsp; &nbsp;<span style="color:#000000;"> &nbsp;某某公司拥有一支高素质的研发队伍，由工业设计师、机械工程师和电子工程师组成，利用世界上最先进的计算机软件进行辅助设计，其先进的实验、检测设备为设计更具科学性提供保障，并与国内外多家电声研究机构、专家建立有技术服务系统，随时掌握电声行业最新资讯，为设计提供充分的理论支持。</span></strong></p><p><strong><span style="color:#000000;"> &nbsp; &nbsp; &nbsp; &nbsp;工业设计部：某某工业设计部拥有一批高素质、专业化的工业设计师、机械工程师。应用先进的设计软件采用全电脑制图。设计绘制各种零部件、组装等工程用图，以及应用三维爆炸图进行设计试装效果分析。为公司开发新产品和满足特定用户设计要求提供快速精确满意的服务。所设计的产品外观新颖、结构合理，精于创意。</span></strong></p><p><strong><span style="color:#000000;"> &nbsp; &nbsp; &nbsp; &nbsp;电声工程部：某某电声工程部聘用电声专家、与国内外电声研究机构建立技术支持服务。分析研究电声技术应用，跟踪麦克风、耳机产品世界发展新动向，建立技术信息库，为某某产品保持科技领先提供技术信息支持。</span></strong></p><p><strong><span style="color:#000000;"> &nbsp; &nbsp; &nbsp; &nbsp;无线电子工程部：某某无线电子工程部拥有一批经验丰富、专业化程度高的无线电子工程师，运用综合分析仪、频谱仪以及数字示波器等精密仪器，通过电脑专业软件，设计分析电路。能设计开发VHF、UHF不同频率、多频点、多声道等无线麦克风、耳机产品。所设计的产品发射距离远、无死角、不失真、性能稳定。</span></strong></p><p><strong><span style="color:#000000;"> &nbsp; &nbsp; &nbsp; &nbsp;某某以“以人为本”为设计理念，以“满足客户需求”为设计宗旨，以“设计出具有核心竞争力的产品”为目标，集中所有力量，在电声领域里设计出最有创新、最有价值的产品。</span><span id="_baidu_bookmark_end_15" style="display:none;line-height:0px;color:#000000;">﻿</span><span id="_baidu_bookmark_end_13" style="display:none;line-height:0px;color:#000000;">﻿</span><span id="_baidu_bookmark_end_11" style="display:none;line-height:0px;color:#000000;">﻿</span><span id="_baidu_bookmark_end_9" style="display:none;line-height:0px;color:#000000;">﻿</span><span id="_baidu_bookmark_end_9" style="display:none;line-height:0px;"></span></strong></p><p style="text-align:left;"><br /><span id="_baidu_bookmark_end_5" style="display:none;line-height:0px;">﻿</span><span id="_baidu_bookmark_end_3" style="display:none;line-height:0px;">﻿</span></p>    </div>
+  </div>
+  <div style=" clear:both"></div>
+</div>
+<!-- footer -->
+<!-- footer -->
+{dede:include filename="footer.htm"/}
+<script>
+$(function(){
+	$(".menu li:has(div)").eq(0).addClass("hover");
+	$(".scrollLoading").scrollLoading();
+	
+})
+</script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.menu.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.banner.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23908821-8', 'ksheng.com');
+  ga('send', 'pageview');
+</script>
+</div>
+<!-- end #body-main -->
+</body>
+</html>

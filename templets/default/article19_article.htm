@@ -1,0 +1,93 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<!-- Force latest IE rendering engine or ChromeFrame if installed -->
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<meta http-equiv="content-language" content="zh-CN" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta name="copyright" content="2014" />
+<!--[if lt IE 9]>    
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>		
+<![endif]-->
+<!--[if gte IE 9]>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>		
+<![endif]-->
+<!--[if !IE]><!-->
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+<!--<![endif]-->
+
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+<script src="{dede:global.cfg_templets_skin/}/js/tools.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/template.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/style.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/jquery.lightbox.css" type="text/css" media="screen" charset="utf-8">
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.situa.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.scrollloading.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/init.js" type="text/javascript" charset="utf-8"></script>
+<!--[if IE 6]>
+		<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>		<script src="{dede:global.cfg_templets_skin/}/js/ie6png.js" type="text/javascript" charset="utf-8"></script>		<script type="text/javascript">
+			IE6PNG.fix('*');
+		</script>
+<![endif]--></head>
+<body>
+<div class="body-main">
+{dede:include filename="head.htm"/}
+<div class="inner-banner">
+  <div class="nav-title">
+    <div class="max-min" style="color:#999"> {dede:field name='typeid' function="GetTopTypename(@me)" /}<br>
+      <span>{dede:field name='typeid' function="GetTopTypenameen(@me)" /}</span> </div>
+  </div>
+    <img src="{dede:global.cfg_templets_skin/}/picture/news-banner.jpg" width="1920" height="380">  </div>
+<div class="inner-title max-min">
+  <div class="breadcrumbs">{dede:field name='position'/}</div>
+    <h2><span>{dede:field name='typename'/}</span> / {dede:field name='typenameen'/}</h2>
+</div>
+<div class="inner-main max-min">
+  {dede:include filename="left.htm"/}
+  <div class="right">
+  	<div class="news_info">
+    	<h1 class="title">{dede:field.title/}</h1>
+      <div class="data">发布日期：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</div>
+        <div>
+			<p style="text-indent:2em;">{dede:field.body/}</p>		</div>
+		<div class="prev" style="float:left">
+					{dede:prenext get='pre'/}
+					</div>
+					 <div class="next" style="float:right">
+				    {dede:prenext get='next'/}
+					</div>        
+        <div class="clearfix"></div>
+  	</div>
+  </div>
+  <div style=" clear:both"></div>
+</div>
+<!-- footer -->
+<!-- footer -->
+{dede:include filename="footer.htm"/}
+<script>
+$(function(){
+	$(".menu li:has(div)").eq(0).addClass("hover");
+	$(".scrollLoading").scrollLoading();
+})
+</script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.menu.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.banner.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23908821-8', 'ksheng.com');
+  ga('send', 'pageview');
+</script>
+</div>
+<!-- end #body-main -->
+</body>
+</html>

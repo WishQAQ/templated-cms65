@@ -1,0 +1,84 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<!-- Force latest IE rendering engine or ChromeFrame if installed -->
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<meta http-equiv="content-language" content="zh-CN" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta name="copyright" content="2014" />
+<!--[if lt IE 9]>    
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>		
+<![endif]-->
+<!--[if gte IE 9]>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>		
+<![endif]-->
+<!--[if !IE]><!-->
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+<!--<![endif]-->
+
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+<script src="{dede:global.cfg_templets_skin/}/js/tools.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/template.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/style.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/jquery.lightbox.css" type="text/css" media="screen" charset="utf-8">
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.situa.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.scrollloading.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/init.js" type="text/javascript" charset="utf-8"></script>
+<!--[if IE 6]>
+		<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>		<script src="{dede:global.cfg_templets_skin/}/js/ie6png.js" type="text/javascript" charset="utf-8"></script>		<script type="text/javascript">
+			IE6PNG.fix('*');
+		</script>
+<![endif]--></head>
+<body>
+<div class="body-main">
+{dede:include filename="head.htm"/}
+<div class="inner-banner">
+  <div class="nav-title">
+    <div class="max-min" style="color:#999"> {dede:field name='typeid' function="GetTopTypename(@me)" /}<br>
+      <span>{dede:field name='typeid' function="GetTopTypenameen(@me)" /}</span> </div>
+  </div>
+   <img src="{dede:global.cfg_templets_skin/}/picture/banner_service.jpg" width="1920" height="380">  </div>
+<div class="inner-title max-min">
+  <div class="breadcrumbs">{dede:field name='position'/}</div>
+    <h2><span>{dede:field name='typename'/}</span> / {dede:field name='typenameen'/}</h2>
+</div>
+<div class="inner-main max-min">
+  {dede:include filename="left.htm"/}
+  <div class="right">  	
+  	<div class="news_info">
+		 <div align="center"><img src="{dede:global.cfg_templets_skin/}/picture/fw1.jpg" width="740" height="304" /></div><p> &nbsp;<a href="http://www.t3315.com/" target="_blank" class="chaxun">马上查询</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p><div style="text-align:center;margin:30px"><img src="{dede:global.cfg_templets_skin/}/picture/fw11.jpg" width="645" height="161" /></div><div class="newbox" style="padding:20px;border:2px solid #f2f2f2;color:#666"><p style="text-align:center;"><strong style="font-size:16px">某某产品防伪标识查询系统说明 </strong></p><p><strong>查询方式： </strong><br /> 刮开防伪涂层获取防伪码<strong> </strong></p>1.电话查询：400-000-0000<p>　　通过拨打400-000-0000，按照自动语音提示，将防伪码顺序输入并按“#”键结束，系统语音报出输入的防伪数码，确认无误后，系统将迅速告知消费者所查询商品的真伪。</p><p><strong>A、如所输入的16位防伪码为真，将按下面三种不同情况提示语音：</strong> </p><p>　　 ◆ 第一次正确查询语音提示： <br /> 您所查询的是：郑州某某电子有限公司生产的麦克风、耳机、扩音器、集成应用、音响系统及配件，是正牌产品的标识，请放心使用。<br />　　◆重复查询语音提示（2至4次）：该数码已查询过n次，首次查询时间为XX年XX月XX日XX时XX分XX秒，为防止假冒，防伪码只能有效查询1次，如果您首次查询的时间与上述时间不符，请当心该产品是假冒产品，如有疑问请拨打咨询电话4008155999。 <br />　　◆查询次数超过4次后：该数码已经超过规定查询次数，谨防假冒，如有疑问请拨打咨询电话400-000-0000，谢谢您的使用，请挂机<em>。</em></p><p><strong>B、如所输入的防伪码有误或假码提示语音： </strong></p><p> 　　您所输入的防伪码是****************，确认请按1，重新输入请按2。 <br /> 　　消费者按1后，提示语音：没有此防伪码，请当心该产品是假冒产品，如有疑问请拨打咨询电话400-000-0000，谢谢您的使用，请挂机<em>。</em></p><p><strong>提示说明：</strong>防伪数码具备一次性验证的特性。只能有效查询一次，再次查询系统提示产品名称和首次查询时间，不再提示真伪！ <br /> <br /> 2、网络查询：<a href="#">www.****.com</a><br /> </p><p>通过登录<a href="#">www.****.com</a>，在网站主页菜单栏可点击“服务支持-产品防伪查询”窗口进入防伪查询页面，或点击官网右侧“防伪查询”图标，顺序输入防伪码，确认无误后按“查询”按钮，消费者即可迅速得到查询结果。 <br /> 网站查询回复内容参考电话语音提示。 </p></div>    </div>
+    
+  </div>
+  <div style=" clear:both"></div>
+</div>
+<!-- footer -->
+<!-- footer -->
+{dede:include filename="footer.htm"/}
+<script>
+$(function(){
+	$(".menu li:has(div)").eq(0).addClass("hover");
+	$(".scrollLoading").scrollLoading();
+	
+})
+</script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.menu.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.banner.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23908821-8', 'ksheng.com');
+  ga('send', 'pageview');
+</script>
+</div>
+<!-- end #body-main -->
+</body>
+</html>

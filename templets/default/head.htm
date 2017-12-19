@@ -1,0 +1,42 @@
+<div class="header">
+  <div class="max-min">
+    <div class="logo fl"><a href="/" title=""><img src="{dede:global.cfg_templets_skin/}/img/logo.png" style="margin-top:10px;"></a></div>
+    <div class="menu fl">
+      <ul>
+        <li>
+          <div class="navf"><a href="/" title="首页"> <span class="navcurbg"></span> <span class="navcur">首页</span> <span class="navon">HOME</span> </a> </div>
+        </li>
+        {dede:channelartlist typeid='top' row='9' currentstyle='hover'}
+        <li class="{dede:field.currentstyle/}">
+          <div class="navf"><a href="{dede:field name='typeurl'/}" title=""> <span class="navcurbg"></span> <span class="navcur">{dede:field name='typename'/}</span> <span class="navon">{dede:field name='typenameen'/}</span> </a></div>
+          <div class="nav-son">
+            <ul>
+              {dede:channel type='son' noself='yes' }
+              <li><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></li>
+              {/dede:channel}
+            </ul>
+          </div>
+        </li>
+        {/dede:channelartlist}
+      </ul>
+    </div>
+    <div class="hotline fr"><img src="{dede:global.cfg_templets_skin/}/img/menu_line.png"></div>
+  </div>
+</div>
+<div class="side">
+  <ul>
+    <li> <a href="/qijingyilan" title="奇景一览">
+      <div class="sidebox"> <img src="{dede:global.cfg_templets_skin/}/img/side_icon01.png">奇景一览 </div>
+      </a> </li>
+    <li> <a href="/guanyuwomen/lianxiwomen" title="联系我们">
+      <div class="sidebox"> <img src="{dede:global.cfg_templets_skin/}/img/side_icon02.png">联系我们 </div>
+      </a> </li>
+    <li><a class="go_top1" href="http://wpa.qq.com/msgrd?v=3&uin=88888888&site=qq&menu=yes">
+      <div class="sidebox"> <img src="{dede:global.cfg_templets_skin/}/img/side_icon04.png">QQ客服 </div>
+      </a> </li>
+    <li> <a href="http://weibo.com/" rel="nofollow" target="_blank">
+      <div class="sidebox"> <img src="{dede:global.cfg_templets_skin/}/img/side_icon03.png">新浪微博 </div>
+      </a> </li>
+    <li style="border:none;"> <a href="javascript:goTop();" class="sidetop"><img src="{dede:global.cfg_templets_skin/}/img/side_icon05.png"></a> </li>
+  </ul>
+</div>

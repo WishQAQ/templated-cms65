@@ -1,0 +1,209 @@
+﻿<!DOCTYPE HTML>
+<html>
+		<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<!-- Force latest IE rendering engine or ChromeFrame if installed -->
+		<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<![endif]-->
+		<meta http-equiv="content-language" content="zh-CN" />
+        <title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+        <meta name="keywords" content="{dede:field.keywords/}" />
+        <meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+		<meta name="copyright" content="2014" />
+		<meta name="robots" content="deny" />
+		<!--[if lt IE 9]>    
+		<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>	
+		<![endif]-->
+		<!--[if gte IE 9]>
+		<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>	
+		<![endif]-->
+		<!--[if !IE]><!-->
+		<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script><!--<![endif]-->
+		<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+		<script src="{dede:global.cfg_templets_skin/}/js/template.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="{dede:global.cfg_templets_skin/}/js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/style.css" type="text/css" media="screen" charset="utf-8">
+		<script src="{dede:global.cfg_templets_skin/}/js/jquery.situa.js" type="text/javascript" charset="utf-8"></script>
+		<script src="{dede:global.cfg_templets_skin/}/js/jquery.scrollloading.js" type="text/javascript" charset="utf-8"></script>
+		<script src="{dede:global.cfg_templets_skin/}/js/init.js" type="text/javascript" charset="utf-8"></script><!--[if IE 6]>
+		<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>	
+		<script src="{dede:global.cfg_templets_skin/}/js/ie6png.js" type="text/javascript" charset="utf-8"></script>		<script type="text/javascript">
+		IE6PNG.fix('*');
+		</script>
+		<![endif]-->
+
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+		<!-- Add fancyBox main JS and CSS files -->
+		<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.fancybox.js"></script>
+		<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/jquery.fancybox.css" media="screen" />
+
+		<!-- Add Button helper (this is optional) -->
+		<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/jquery.fancybox-buttons.css" />
+		<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.fancybox-buttons.js"></script>
+
+		<!-- Add Thumbnail helper (this is optional) -->
+		<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/jquery.fancybox-thumbs.css" />
+		<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.fancybox-thumbs.js"></script>
+
+		<!-- Add Media helper (this is optional) -->
+		<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.fancybox-media.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.fancybox').fancybox();	
+			});
+		</script>
+		<script type="text/javascript">
+			function checkNav(index){
+				$("div[name='nav']").each(function(i,item){
+					$(item).hide();
+					$("#show_li_"+i).removeClass("on");
+					if((i)==index){
+						$(item).show();
+						$("#show_li_"+i).addClass("on");
+					}
+				})
+				
+			}
+		</script>
+		
+					<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/swfobject.js"></script>
+					<script type="text/javascript">
+					$(document).ready(function(){
+						var flashvars = {};
+						flashvars.loadUrl = "http://www.ksheng.com/product_3d/images/product_95/ts-6500fx/";    //加载路径  例："http://www.xxx.com/{dede:global.cfg_templets_skin/}/img/" 记住别少了img后面的"/"
+						flashvars.loadImgNum = "24";    //加载图片数量 例：24 图片命名规则是 0-23.jpg
+						flashvars.loadType = "jpg";     //加载图片类型
+						flashvars.isHide = "1";         //是否隐藏功能区 0：不隐藏 1：隐藏
+
+						var params = {};
+						params.wmode = "transparent";
+						params.stretchToFit="1";
+						var attributes = {};
+
+						swfobject.embedSWF("http://www.ksheng.com/product_3d/Main.swf", "flashContent","480", "480", "10.0.0", "http://www.ksheng.com/product_3d/expressInstall.swf", flashvars, params, attributes);
+					});
+					</script>
+						</head>
+<body>
+<div class="body-main">
+		{dede:include filename="head.htm"/}
+<div class="inner-banner">
+	<div class="nav-title">
+    <div class="max-min" style="color:#999"> {dede:field name='typeid' function="GetTopTypename(@me)" /}<br>
+      <span>{dede:field name='typeid' function="GetTopTypenameen(@me)" /}</span> </div>
+  </div>
+	  <img src="{dede:global.cfg_templets_skin/}/picture/inner-banner.jpg" width="1920" height="380">	  </div>
+	<div class="inner-title max-min">
+	  <div class="breadcrumbs">{dede:field name='position'/}</div>
+	   <H2><div style="float:right;"><input type="text" id="keyWord" name="keyWord" style="border:1px solid #ddd; margin-bottom:0px; width:140px; color:#ccc;" onFocus="if(value=='请输入产品型号'){value=''};" onBlur="if(value==''){value='请输入产品型号'};" value="请输入产品型号"/>&nbsp;<input type="button" id="btnSearch" onClick="sutmitForm()" value="搜索" style="background:#e10000; padding:4px 15px; color:#fff; font-size:14px; border:none"/></div>
+    <span>{dede:field name='typename'/}</span> / {dede:field name='typenameen'/}  </H2>
+	</div>
+<div class="inner-main max-min">
+    <div class="left">
+   	<ul>
+    {dede:channelartlist typeid='1' currentstyle='on'}
+        <li class="{dede:field.currentstyle/}"><a href="{dede:field name='typeurl'/}" ><img src="/templets/default/picture/{dede:field name='id'/}.png" width="46" height="46">{dede:field name='typename'/}</a>
+          <ul>
+          {dede:sql sql='Select * from `dede_arctype` where reid=~id~ ORDER BY id'}
+            <li><a href="[field:typelink/]" >[field:typename/]</a></li>
+          {/dede:sql}
+          </ul>
+        </li>
+    {/dede:channelartlist}    
+   </ul>	 
+  </div>
+    <div class="right">
+    <div class="pro_head" >
+    <div class="pro_intro">
+		<h3>{dede:field.title/}</h3>{dede:field.body/}<div class="price"></div>    </div>
+    <div class="pro_img">
+		<div class="pro_360">
+			<div id="flashContent"><img height="480" width="480" alt="" src="{dede:field.litpic/}"></img></div>	   </div>
+      <div class="more_img">
+{dede:field name='imgurls' alt='图片输出区'}			
+			<a class="fancybox" href="[field:imgsrc function=str_replace('-lp.','.',@me)/]" data-fancybox-group="gallery" title=""><img src="[field:imgsrc function=str_replace('-lp.','.',@me)/]" ></a>
+{/dede:field} 
+		</div>
+    </div>
+  </div>
+    <div class="pro_nav">
+	  <ul>
+        <li class="on" id="show_li_0"><a href="javascript:;" onClick="checkNav(0)">产品介绍</a></li>
+        <li  id="show_li_1"><a href="javascript:;" onClick="checkNav(1)">技术参数</a></li>
+        <li  id="show_li_2"><a href="javascript:;" onClick="checkNav(2)">包装清单</a></li>
+        <li  id="show_li_3"><a href="javascript:;" onClick="checkNav(3)">相关资讯</a></li>
+      </ul>
+     </div>
+    <div id="pro_show" name="nav">
+		<div style="border-bottom:#eaeaea 1px solid;text-justify:inter-ideograph;text-align:justify;border-left:#eaeaea 1px solid;margin:auto;width:768px;font-family:&#39;microsoft yahei&#39;;background:fff;font-size:13px;overflow:hidden;border-top:#eaeaea 1px solid;border-right:#eaeaea 1px solid">
+        {dede:field.jieshao/}</div>	</div>
+    <div id="pro_tech" name="nav">
+          <p>{dede:field.canshu/}</p>       
+     </div>
+    <div id="pro_pack" name="nav">
+                <p>{dede:field.qingdan/}</p>       
+    </div>
+    <div id="pro_news_title" name="nav">相关资讯</div>
+    <div id="pro_news">
+    {dede:likearticle row='2'}
+    <div><a href="[field:arcurl/]"><img src="[field:litpic/]" width="600" height="238" alt="—"></a><h6><a href="[field:arcurl/]">[field:title /]</a></h6>
+							<p>[field:description function='cn_substr(@me,158)'/].......</p>
+							<span>[field:pubdate function="MyDate('y-m-d',@me)"/]</span> </div>
+      {/dede:likearticle}  
+				</div>
+	   			</div>
+			  </div>
+              <div style=" clear:both"></div>
+            </div>
+<!-- footer -->
+<form action="product_search.html" name="search_form">
+<input type="hidden" name="mid" value="2"/>
+	<input type="hidden" id="kw" name="kw"/>
+</form>
+<script type="text/javascript">
+	function sutmitForm(){
+		var keyWord = $("#keyWord").val();
+		if(keyWord.length > 0){
+			$("#kw").val(keyWord);
+			$("form[name='search_form']").submit();
+		}
+	}
+</script>
+<!-- footer -->
+{dede:include filename="footer.htm"/}
+<script>
+$(function(){
+	$(".menu li:has(div)").eq(0).addClass("hover");
+	$(".scrollLoading").scrollLoading();
+	
+})
+</script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.menu.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.banner.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23908821-8', 'ksheng.com');
+  ga('send', 'pageview');
+</script>
+</div>
+<!-- end #body-main --> 
+<!--
+<script>
+$(function(){
+	$(".scrollLoading").scrollLoading();
+	$(".menu li:has(div)").eq(1).addClass("hover").children(".nav-son").find("li:eq(0)").addClass("on");
+	
+})
+</script> 
+--> 
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.product.js" type="text/javascript" charset="utf-8"></script>
+<!-- end #body-main -->
+</body>
+</html>

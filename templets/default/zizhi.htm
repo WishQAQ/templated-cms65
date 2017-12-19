@@ -1,0 +1,85 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<!-- Force latest IE rendering engine or ChromeFrame if installed -->
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<meta http-equiv="content-language" content="zh-CN" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta name="copyright" content="2014" />
+<!--[if lt IE 9]>    
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>		
+<![endif]-->
+<!--[if gte IE 9]>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>		
+<![endif]-->
+<!--[if !IE]><!-->
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+<!--<![endif]-->
+
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+<script src="{dede:global.cfg_templets_skin/}/js/tools.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/template.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/style.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/jquery.lightbox.css" type="text/css" media="screen" charset="utf-8">
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.situa.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.scrollloading.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/init.js" type="text/javascript" charset="utf-8"></script>
+<!--[if IE 6]>
+		<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>		<script src="{dede:global.cfg_templets_skin/}/js/ie6png.js" type="text/javascript" charset="utf-8"></script>		<script type="text/javascript">
+			IE6PNG.fix('*');
+		</script>
+<![endif]--></head>
+<body>
+<div class="body-main">
+{dede:include filename="head.htm"/}
+<div class="inner-banner">
+  <div class="nav-title">
+    <div class="max-min" style="color:#999"> {dede:field name='typeid' function="GetTopTypename(@me)" /}<br>
+      <span>{dede:field name='typeid' function="GetTopTypenameen(@me)" /}</span> </div>
+  </div>
+  <img src="{dede:global.cfg_templets_skin/}/picture/about-banner.jpg" width="1920" height="380"></div>
+<div class="inner-title max-min">
+  <div class="breadcrumbs">{dede:field name='position'/}</div>
+    <h2><span>{dede:field name='typename'/}</span> / {dede:field name='typenameen'/}</h2>
+</div>
+<div class="inner-main max-min">
+  {dede:include filename="left.htm"/}
+  <div class="right">
+    <div class="news_info">
+		<style>
+  .newbox p strong {color:#09f; padding-right:5px;}
+</style><p style="text-align:right;text-indent:0em;" dir="rtl"><br /></p><ul><li style="line-height:30px;height:30px;"><p style="text-align:right;"> &nbsp;<img src="{dede:global.cfg_templets_skin/}/picture/14201686024976.gif" title="13994445329926.gif" /></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong><span style="color:#ff0000;"> </span><strong style="line-height:30px;text-align:right;"><span style="color:#ff0000;">2014年01月 </span></strong><span style="line-height:30px;text-align:right;color:#000000;background-color:#ffffff;">某某商标认定为“中国驰名商标”</span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong><span style="color:#ff0000;"> 2013年12月 </span><span style="color:#000000;">某某产品被认定为“广东省名牌产品”</span><br /></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2013年 &nbsp; &nbsp; &nbsp; <span style="color:#000000;"> &nbsp;</span></span><span style="color:#000000;">某某品牌被评为“十佳民族品牌”</span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2013年 &nbsp; &nbsp; &nbsp;<span style="color:#000000;"> &nbsp; </span></span><span style="color:#000000;">某某品牌被评为“十佳麦克风品牌”</span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2012年 &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color:#000000;">某某品牌被评为“十佳麦克风品牌”</span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong><span style="color:#ff0000;"> </span><span style="color:#ff0000;">2011年05月<span style="color:#000000;"> </span></span><span style="color:#000000;">某某公司被授予博罗县“知识产权工作先进单位” </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2011年 &nbsp; &nbsp; &nbsp; &nbsp;<span style="color:#000000;"> </span></span><span style="color:#000000;">某某品牌被评为“十大优秀麦克风、麦克风品牌奖” </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2011年 &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color:#000000;">某某品牌被评为“十佳民族品牌” </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2011年05月 </span><span style="color:#000000;">某某公司荣获第七届中国(深圳)国际文化产业博览交易会惠州展区”优秀展示奖”</span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2010年11月 </span><span style="color:#000000;">某某公司被授予为第16届亚洲运动会的筹办和举办工作作出重要贡献“荣誉证书”</span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2010年09月 </span><span style="color:#000000;">某某公司“TS-650型有线耳机研制”荣获博罗县科学技术奖励荣誉证书</span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2010年09月</span> <span style="color:#000000;">某某公司“TS-650型有线耳机研制”荣获惠州市科学技术奖励证书</span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2010年08月</span> <span style="color:#000000;">某某公司荣获“质量管理体系认证证书”</span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2010年06月</span> <span style="color:#000000;">某某公司荣获“广东省知识产权优势企业”</span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2010年04月</span> <span style="color:#000000;">某某公司被惠州知识产权局授予“知识产权优势企业”光荣称号</span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2009年12月</span> <span style="color:#000000;">某某品牌被评选为“十大民族品牌”。 </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2009年07月</span> <span style="color:#000000;">某某公司研发、生产的“小振膜电容传声器”荣获广东省科学技术奖励三等奖</span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2008年11月</span><span style="color:#000000;"> 某某公司研发、生产的“小振膜电容传声器”荣获国家重点新产品证书</span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong><span style="color:#ff0000;"> </span><span style="color:#ff0000;">2008年08月</span> <span style="color:#000000;">某某公司研发、生产的“小振膜电容传声器”荣获惠州市科学技术奖励三等奖 </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2008年01月</span> <span style="color:#000000;">某某公司荣获“中国品牌战略合作伙伴”称号 </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong><span style="color:#ff0000;"> </span><span style="color:#ff0000;">2008年01月</span> <span style="color:#000000;">某某品牌被亚洲品牌委员会评为“中国电声行业最具发展力品牌”</span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2008年01月</span> <span style="color:#000000;">某某公司成为“中国品牌联合会电声行业副理事长单位” </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2008年</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color:#000000;"> 某某品牌被评为“十大竞争力品牌” </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong><span style="color:#ff0000;"> </span><span style="color:#ff0000;">2007年12月</span> <span style="color:#000000;">某某公司成为“中国品牌联合会电声行业副理事长单位” </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2007年12月</span> <span style="color:#000000;">某某公司研发、生产的“TS-650耳机”取得科技成果鉴定证书 </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2007年12月</span> <span style="color:#000000;">某某公司研发、生产的”小振膜电容传声器“取得科学成果鉴定证书 </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2007年08月</span> <span style="color:#000000;">某某公司成为“中国录音师协会理事单位” </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2007年 &nbsp; &nbsp;</span> &nbsp; &nbsp; <span style="color:#000000;">某某公司产品被认定为“十大最具竞争力品牌” </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2007年05月</span> <span style="color:#000000;">某某公司成功组建“广东省电声工程技术研究开发中心” </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong><span style="color:#ff0000;"> </span><span style="color:#ff0000;">2007年04月</span> <span style="color:#000000;">某某公司被评为“高新技术企业” </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2006年06月</span> <span style="color:#000000;">某某公司研发、生产的“UHF-968型无线耳机”荣获科学技术进步奖三等奖 </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2005年07月 </span><span style="color:#000000;">某某公司研发、生产的“CM-450型真空管电容传声器”荣获科学技术进步奖二等奖 </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong><span style="color:#ff0000;"> </span><span style="color:#ff0000;">2005年06月<span style="color:#000000;"> </span></span><span style="color:#000000;">某某公司研发、生产的“CM-450型真空管电容传声器”荣获科学技术进步奖二等奖 </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2005年</span> &nbsp; &nbsp; &nbsp; <span style="color:#000000;"> &nbsp;某某公司成为中国演艺设备技术协会会员单位 </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong><span style="color:#ff0000;"> </span><span style="color:#ff0000;">2005年</span> &nbsp; &nbsp; &nbsp; &nbsp; <span style="color:#000000;">某某公司成为“电声协会会员单位” </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2004年06月</span> <span style="color:#000000;">某某公司研发、生产的扩音器通过3C认证</span> </strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2003年11月</span> <span style="color:#000000;">某某公司研发、生产的麦克风和耳机产品通过CE认证 </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong><span style="color:#ff0000;"> </span><span style="color:#ff0000;">2003年10月</span> <span style="color:#000000;">某某公司被评为“中国市场产品质量用户满意最具竞争力第一品牌” </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2003年01月</span><span style="color:#000000;"> 某某公司注册商标“</span><img src="{dede:global.cfg_templets_skin/}/picture/14201687564089.gif" title="logo_1.gif" /><span style="color:#000000;">”，“</span><img src="{dede:global.cfg_templets_skin/}/picture/14201687662540.gif" title="logo_2.gif" /><span style="color:#000000;">”被评为广东省著名商标 </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2002年12月</span> <span style="color:#000000;">某某公司通过了采用国际标准产品标志的认证 </span></strong></p></li><li style="line-height:30px;height:30px;"><p style="text-align:left;"><strong> <span style="color:#ff0000;">2001年08月</span><span style="color:#000000;"> 某某公司顺利通过了ISO92000质量管理体系认证 </span></strong></p></li></ul>    </div>
+  </div>
+  <div style=" clear:both"></div>
+</div>
+<!-- footer -->
+<!-- footer -->
+{dede:include filename="footer.htm"/}
+<script>
+$(function(){
+	$(".menu li:has(div)").eq(0).addClass("hover");
+	$(".scrollLoading").scrollLoading();
+	
+})
+</script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.menu.js" type="text/javascript" charset="utf-8"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.banner.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23908821-8', 'ksheng.com');
+  ga('send', 'pageview');
+</script>
+</div>
+<!-- end #body-main -->
+</body>
+</html>
